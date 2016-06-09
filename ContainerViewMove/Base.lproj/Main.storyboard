@@ -22,15 +22,25 @@
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="qJH-T8-NzR" secondAttribute="trailing" id="0c6-B4-YPk"/>
                             <constraint firstAttribute="bottom" secondItem="qJH-T8-NzR" secondAttribute="bottom" id="5VR-T4-MSJ"/>
                             <constraint firstItem="qJH-T8-NzR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RH2-KW-uQc"/>
                             <constraint firstItem="qJH-T8-NzR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pWA-aV-Sfv"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="goc-9S-cSI" appends="YES" id="SLL-my-t2J"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="goc-9S-cSI">
+                    <rectEdge key="edges" top="YES"/>
+                    <connections>
+                        <action selector="panTopEdge:" destination="BYZ-38-t0r" id="Fmz-ba-Sp1"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="181.33333333333334" y="406.59333333333331"/>
         </scene>
@@ -68,15 +78,25 @@
                             </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="D0x-gE-75y" secondAttribute="trailing" id="DjR-02-nI3"/>
                             <constraint firstItem="D0x-gE-75y" firstAttribute="leading" secondItem="9c7-CQ-Soy" secondAttribute="leading" id="KRS-N0-bIT"/>
                             <constraint firstAttribute="bottom" secondItem="D0x-gE-75y" secondAttribute="bottom" id="Y4K-DQ-kv0"/>
                             <constraint firstItem="D0x-gE-75y" firstAttribute="top" secondItem="9c7-CQ-Soy" secondAttribute="top" id="uZq-bg-LwW"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="KVf-hG-kvl" appends="YES" id="f0h-wk-LdP"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZw-14-RcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <screenEdgePanGestureRecognizer minimumNumberOfTouches="1" id="KVf-hG-kvl">
+                    <rectEdge key="edges" bottom="YES"/>
+                    <connections>
+                        <action selector="panBottomEdge:" destination="iMI-Q0-kJQ" id="Uh2-5G-pzU"/>
+                    </connections>
+                </screenEdgePanGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="579" y="406"/>
         </scene>

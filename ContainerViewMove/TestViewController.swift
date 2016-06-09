@@ -10,4 +10,6 @@ class TestViewController: UIViewController {
         super.viewDidLoad()
     }
 
+    @IBAction func panBottomEdge(sender: UIScreenEdgePanGestureRecognizer) {
+    }
 }
